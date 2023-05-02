@@ -428,7 +428,10 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
-  gap: 120px;
+}
+
+.footer-caption {
+  margin-right: 120px;
 }
 
 .logo-footer {
@@ -445,6 +448,10 @@ body {
 
   line-height: 1.5;
   color: var(--light-txt);
+}
+
+.footer-subscribe {
+  margin-left: auto;
 }
 
 .footer-sotials-title {
@@ -479,14 +486,8 @@ body {
   background-color: #31d0aa;
 }
 
-.footer-form {
-  width: 453px;
-  margin-left: auto;
-}
-
-.footer-contact-label {
+.footer-form-title {
   display: block;
-  width: 100%;
 
   margin-bottom: 16px;
 
@@ -498,7 +499,7 @@ body {
   color: #ffffff;
 }
 
-.footer-contacts {
+.footer-form {
   display: flex;
   gap: 24px;
 }
@@ -679,7 +680,7 @@ body {
 
   width: 408px;
   min-height: 584px;
-  padding: 24px;
+  padding: 72px 24px 24px;
 
   color: var(--title-txt);
   background-color: #fcfcfc;
@@ -695,14 +696,15 @@ body {
 }
 
 .modal-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
   display: flex;
   justify-content: center;
   align-items: center;
   width: 24px;
   height: 24px;
-
-  margin-left: auto;
-  margin-bottom: 24px;
 
   background-color: #e7e9fc;
   border-radius: 50%;
@@ -777,6 +779,7 @@ body {
   left: 16px;
   transform: translateY(-50%);
   pointer-events: none;
+  fill: var(--title-txt);
   transition: fill var(--anim-speed);
 }
 
